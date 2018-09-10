@@ -19,3 +19,19 @@ dotnet ef migrations add InitialCreate
 
 # Cria um database, se ele não existir, e roda as migrations
 dotnet ef database update
+
+#Extensão para trabalhar com Angular Cli
+Angular v6 snippets
+Angular Files
+Angular Language Service
+Angular2-switcher
+Auto Rename Tag
+Bracket pair Colorizer
+Material Icon Theme
+Path Intellisense
+Prettier - Code formatter
+TSLint
+
+#Atalhos Angular
+Dentro do componente você pode ir para a view: ALT + o
+Dentro do html você volta para o componente: ALT + u
