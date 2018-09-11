@@ -35,6 +35,9 @@ namespace DatingApp.API
 
             //config cors
             services.AddCors(opt => opt.AddPolicy("AllowSpecificOrigin", b => b.WithOrigins("http://localhost:4200")));
+
+            //criando o repositório global
+            services.AddScoped<IAuthRepository, AuthRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
