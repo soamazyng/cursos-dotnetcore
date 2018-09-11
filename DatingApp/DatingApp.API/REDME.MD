@@ -17,6 +17,9 @@ Nuget > Microsoft.EntityFrameworkCore.Sqlite
 # Criando uma migração do zero
 dotnet ef migrations add InitialCreate
 
+# Criando uma nova migração
+dotnet ef migrations add AddedUserEntity
+
 # Cria um database, se ele não existir, e roda as migrations
 dotnet ef database update
 
@@ -35,3 +38,10 @@ TSLint
 #Atalhos Angular
 Dentro do componente você pode ir para a view: ALT + o
 Dentro do html você volta para o componente: ALT + u
+
+#Configurando o cors por domínio
+https://docs.microsoft.com/pt-br/aspnet/core/security/cors?view=aspnetcore-2.1
+
+#Segurança da senha
+Hash + Salt
+

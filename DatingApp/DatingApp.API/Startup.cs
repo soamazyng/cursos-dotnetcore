@@ -29,6 +29,12 @@ namespace DatingApp.API
         {
             services.AddDbContext<DataContext>(x=> x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            //config cors for all domains
+            //services.AddCors();
+
+            //config cors
+            services.AddCors(opt => opt.AddPolicy("AllowSpecificOrigin", b => b.WithOrigins("http://localhost:4200")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +48,12 @@ namespace DatingApp.API
             {
                 //app.UseHsts();
             }
+
+            //config cors for all
+            //app.UseCors(c => c.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+
+            //config cors apenas para um dominio
+             app.UseCors("AllowSpecificOrigin");
 
             //app.UseHttpsRedirection();
             app.UseMvc();
