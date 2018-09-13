@@ -12,6 +12,11 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using DatingApp.API.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace DatingApp.API
 {
@@ -38,6 +43,19 @@ namespace DatingApp.API
 
             //criando o repositório global
             services.AddScoped<IAuthRepository, AuthRepository>();
+        
+            //add authentication service
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options => {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII
+                            .GetBytes(Configuration.GetSection("AppSettings:Token").Value)),
+                        ValidateIssuer = false,
+                        ValidateAudience = false
+                    };
+                });                
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,10 +74,30 @@ namespace DatingApp.API
             //app.UseCors(c => c.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             //config cors apenas para um dominio
-             app.UseCors("AllowSpecificOrigin");
+            app.UseCors("AllowSpecificOrigin");
+
+            app.Use(async (context, next) =>
+            {
+                var authHeader = context.Request.Headers["Authorization"].ToString();
+                if (authHeader != null && authHeader.StartsWith("bearer", StringComparison.OrdinalIgnoreCase))
+                {   
+                    var tokenStr = authHeader.Substring("Bearer ".Length).Trim();
+                    System.Console.WriteLine(tokenStr);
+                    var handler = new JwtSecurityTokenHandler();
+                    var token = handler.ReadToken(tokenStr) as JwtSecurityToken;
+                    var nameid = token.Claims.First(claim => claim.Type == "nameid").Value;
+
+                    var identity = new ClaimsIdentity(token.Claims);
+                    context.User = new ClaimsPrincipal(identity);
+                }
+                await next();
+            });
+
+            //add authentication --sempre chamar antes do UseMVC
+            app.UseAuthentication();
 
             //app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseMvc(); //Este use SEMPRE TEM QUE SER O ÚLTIMO
         }
     }
 }
