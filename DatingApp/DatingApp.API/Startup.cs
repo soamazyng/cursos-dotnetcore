@@ -39,7 +39,8 @@ namespace DatingApp.API
             //services.AddCors();
 
             //config cors
-            services.AddCors(opt => opt.AddPolicy("AllowSpecificOrigin", b => b.WithOrigins("http://localhost:4200/")));
+            //services.AddCors(opt => opt.AddPolicy("AllowSpecificOrigin", b => b.WithOrigins("http://localhost:4200/")));
+            services.AddCors(opt => opt.AddPolicy("AllowSpecificOrigin", builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials()));
 
             //criando o repositório global
             services.AddScoped<IAuthRepository, AuthRepository>();
