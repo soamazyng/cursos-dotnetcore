@@ -80,8 +80,8 @@ namespace DatingApp.API.Controllers
 
             return Ok(new
             {
-                //token = tokenHandler.WriteToken(token)                
-                token = CrypControl.EncryptString(tokenHandler.WriteToken(token), _tokenEncript)
+                token = tokenHandler.WriteToken(token)                
+                //token = CrypControl.EncryptString(tokenHandler.WriteToken(token), _tokenEncript)
             });
 
         }

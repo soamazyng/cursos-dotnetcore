@@ -12,7 +12,7 @@ namespace DatingApp.API.Controllers
 {
     [Authorize]
     [Route("api/[controller]")]        
-    [ApiController]    
+    [ApiController]
     public class ValuesController : ControllerBase
     {
         //inicia o context
