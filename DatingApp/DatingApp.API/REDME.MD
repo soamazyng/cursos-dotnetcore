@@ -45,3 +45,6 @@ https://docs.microsoft.com/pt-br/aspnet/core/security/cors?view=aspnetcore-2.1
 #Segurança da senha
 Hash + Salt
 
+#Developer mode
+A configuração de desenvolvedor ou produção encontra-se dentro da pastas Properties >> launchSettings.json
+
