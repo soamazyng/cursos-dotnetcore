@@ -48,3 +48,8 @@ Hash + Salt
 #Developer mode
 A configuração de desenvolvedor ou produção encontra-se dentro da pastas Properties >> launchSettings.json
 
+#validar o token se é um jwt
+npm install @auth0/angular-jwt
+
+
+
