@@ -18,7 +18,7 @@
 
   <div *ngIf="loggedIn()" class="dropdown">
     <a class="dropdown-toggle text-light">
-      Welcome User
+      Welcome {{ authService.decodeToken.unique_name }}
     </a>
   
     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
