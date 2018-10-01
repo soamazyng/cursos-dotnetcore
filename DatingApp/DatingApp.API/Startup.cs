@@ -93,7 +93,7 @@ namespace DatingApp.API
             //app.UseCors(c => c.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             // add seeder
-            seeder.SeedUsers();
+            //seeder.SeedUsers();
 
             //config cors apenas para um dominio
             app.UseCors("AllowSpecificOrigin");
