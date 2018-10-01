@@ -46,6 +46,9 @@ namespace DatingApp.API
             //services.AddCors(opt => opt.AddPolicy("AllowSpecificOrigin", b => b.WithOrigins("http://localhost:4200/")));
             services.AddCors(opt => opt.AddPolicy("AllowSpecificOrigin", builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials()));
 
+            // add seeder
+            services.AddTransient<Seed>();
+
             //criando o repositório global
             services.AddScoped<IAuthRepository, AuthRepository>();
         
@@ -64,7 +67,7 @@ namespace DatingApp.API
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, Seed seeder)
         {
             if (env.IsDevelopment())
             {
@@ -88,6 +91,9 @@ namespace DatingApp.API
 
             //config cors for all
             //app.UseCors(c => c.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+
+            // add seeder
+            seeder.SeedUsers();
 
             //config cors apenas para um dominio
             app.UseCors("AllowSpecificOrigin");
