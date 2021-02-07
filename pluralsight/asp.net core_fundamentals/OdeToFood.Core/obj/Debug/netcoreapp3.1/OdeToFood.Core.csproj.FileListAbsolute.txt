@@ -1,0 +1,8 @@
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood.Core\bin\Debug\netcoreapp3.1\OdeToFood.Core.deps.json
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood.Core\bin\Debug\netcoreapp3.1\OdeToFood.Core.dll
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood.Core\bin\Debug\netcoreapp3.1\OdeToFood.Core.pdb
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.AssemblyInfoInputs.cache
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.AssemblyInfo.cs
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.csproj.CoreCompileInputs.cache
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.dll
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.pdb
