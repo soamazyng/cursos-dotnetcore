@@ -2800,6 +2800,21 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "OdeToCode.UseNodeModules/1.0.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.2",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.0.2",
+          "Microsoft.AspNetCore.StaticFiles": "2.0.2",
+          "Microsoft.Extensions.FileProviders.Physical": "2.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/OdeToCode.UseNodeModules.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OdeToCode.UseNodeModules.dll": {}
+        }
+      },
       "Remotion.Linq/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -7765,6 +7780,19 @@
         "nuget.frameworks.nuspec"
       ]
     },
+    "OdeToCode.UseNodeModules/1.0.6": {
+      "sha512": "mE838R7RdMaQ3csLrWMCeeG8UtL5jdfEFlYjRTit6EfOTB17sLoV/tmNdAXl59ht0Rcb+9m3t9rqyC7gVEz21A==",
+      "type": "package",
+      "path": "odetocode.usenodemodules/1.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/OdeToCode.UseNodeModules.dll",
+        "lib/netstandard2.0/OdeToCode.UseNodeModules.dll",
+        "odetocode.usenodemodules.1.0.6.nupkg.sha512",
+        "odetocode.usenodemodules.nuspec"
+      ]
+    },
     "Remotion.Linq/2.2.0": {
       "sha512": "fK/76UmpC0FXBlGDFVPLJHQlDLYnGC+XY3eoDgCgbtrhi0vzbXDQ3n/IYHhqSKqXQfGw/u04A1drWs7rFVkRjw==",
       "type": "package",
@@ -12619,6 +12647,7 @@
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.BrowserLink >= 2.1.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.10",
+      "OdeToCode.UseNodeModules >= 1.0.6",
       "OdeToFood.Data >= 1.0.0"
     ]
   },
@@ -12721,6 +12750,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.1.10, )"
+          },
+          "OdeToCode.UseNodeModules": {
+            "target": "Package",
+            "version": "[1.0.6, )"
           }
         },
         "imports": [
