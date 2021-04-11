@@ -2,7 +2,6 @@ C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_f
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\bin\Debug\netcoreapp2.1\appsettings.json
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\bin\Debug\netcoreapp2.1\package-lock.json
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\bin\Debug\netcoreapp2.1\package.json
-C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\bin\Debug\netcoreapp2.1\OdeToFood.deps.json
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\bin\Debug\netcoreapp2.1\OdeToFood.runtimeconfig.json
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\bin\Debug\netcoreapp2.1\OdeToFood.runtimeconfig.dev.json
