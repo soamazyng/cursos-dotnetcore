@@ -1,6 +1,7 @@
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\bin\Debug\netcoreapp2.1\appsettings.Development.json
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\bin\Debug\netcoreapp2.1\appsettings.json
-C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\bin\Debug\netcoreapp2.1\package-lock.json
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\bin\Debug\netcoreapp2.1\package.json
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\bin\Debug\netcoreapp2.1\OdeToFood.deps.json
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\bin\Debug\netcoreapp2.1\OdeToFood.runtimeconfig.json
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\bin\Debug\netcoreapp2.1\OdeToFood.runtimeconfig.dev.json
@@ -15,6 +16,7 @@ C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_f
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.csprojAssemblyReference.cache
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.AssemblyInfoInputs.cache
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.AssemblyInfo.cs
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.csproj.CoreCompileInputs.cache
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.RazorAssemblyInfo.cache
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.RazorAssemblyInfo.cs
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.TagHelpers.input.cache
@@ -23,12 +25,19 @@ C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_f
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Error.cshtml.g.cs
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Index.cshtml.g.cs
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Create.cshtml.g.cs
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Delete.cshtml.g.cs
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Details.cshtml.g.cs
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Edit.cshtml.g.cs
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Index.cshtml.g.cs
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\ClientRestaurants.cshtml.g.cs
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\Delete.cshtml.g.cs
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\Detail.cshtml.g.cs
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\Edit.cshtml.g.cs
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\List.cshtml.g.cs
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\NotFound.cshtml.g.cs
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\_Summary.cshtml.g.cs
+C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\Components\RestaurantCount\Default.cshtml.g.cs
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_CookieConsentPartial.cshtml.g.cs
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -41,10 +50,3 @@ C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_f
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.dll
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.pdb
 C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.genruntimeconfig.cache
-C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\Components\RestaurantCount\Default.cshtml.g.cs
-C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.csproj.CoreCompileInputs.cache
-C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Create.cshtml.g.cs
-C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Delete.cshtml.g.cs
-C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Details.cshtml.g.cs
-C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Edit.cshtml.g.cs
-C:\Users\soama\Documents\www\Cursos\cursos-dotnetcore\pluralsight\asp.net core_fundamentals\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Index.cshtml.g.cs

@@ -61,7 +61,7 @@ using OdeToFood;
             WriteLiteral("\r\n<h2>Index</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(117, 35, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8e2d879b766d48b69cdf0fc79973a44e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4541abf70aca4efca5537688cb81c5d8", async() => {
                 BeginContext(138, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -151,7 +151,7 @@ using OdeToFood;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(995, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4a15b773506f433c8c4f5fda94d38a7b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "302e69b648514af49e9b3b6dc3e24287", async() => {
                 BeginContext(1040, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -186,7 +186,7 @@ using OdeToFood;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1068, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f71080a1561d48b0ad4ed93840192099", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "465c50f33a7f4b3396e3ca40c0976c95", async() => {
                 BeginContext(1116, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -221,7 +221,7 @@ using OdeToFood;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1147, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4b71ddabf17b4329bfc1ff3f4f361091", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "72d9d7f5146044d094f50cbe730fb5fd", async() => {
                 BeginContext(1194, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

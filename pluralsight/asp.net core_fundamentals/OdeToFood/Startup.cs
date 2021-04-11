@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using OdeToFood.Data;
+using System;
 
 namespace OdeToFood
 {
@@ -39,7 +40,8 @@ namespace OdeToFood
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app
+                            , IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -51,11 +53,31 @@ namespace OdeToFood
                 app.UseHsts();
             }
 
+            app.Use(SayHelloMiddleware);
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseNodeModules(env); //habilita o acesso a pasta node_modules
             app.UseCookiePolicy();
 
             app.UseMvc();
+        }
+
+        private RequestDelegate SayHelloMiddleware(
+                                        RequestDelegate next)
+        {
+            return async ctx =>
+            {
+                if (ctx.Request.Path.StartsWithSegments("/hello"))
+                {
+                    await ctx.Response.WriteAsync("Hello, World!");
+                }
+                else
+                {
+                    await next(ctx);
+                }
+
+            };
         }
     }
 }
