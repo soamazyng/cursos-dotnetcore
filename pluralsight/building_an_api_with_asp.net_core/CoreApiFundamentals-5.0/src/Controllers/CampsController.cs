@@ -2,6 +2,7 @@
 using CoreCodeCamp.Data;
 using CoreCodeCamp.models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Routing;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,15 +10,18 @@ using System.Threading.Tasks;
 namespace CoreCodeCamp.Controllers
 {
     [Route("api/[controller]")]
-    public class CampsController :ControllerBase
+    [ApiController]
+    public class CampsController : ControllerBase
     {
         private readonly ICampRepository _repository;
         private readonly IMapper _mapper;
+        private readonly LinkGenerator _linkGenerator;
 
-        public CampsController(ICampRepository repository, IMapper mapper)
+        public CampsController(ICampRepository repository, IMapper mapper, LinkGenerator linkGenerator)
         {
             _repository = repository;
             _mapper = mapper;
+            _linkGenerator = linkGenerator;
         }
 
         [HttpGet]
@@ -67,6 +71,90 @@ namespace CoreCodeCamp.Controllers
             {
                 return this.StatusCode(500, "Database failure");
             }
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<CampModel>> Post(CampModel model)
+        {
+            try
+            {
+                var campExists = await _repository.GetCampAsync(model.Moniker);
+                if (campExists != null)
+                {
+                    return BadRequest("Moniker already exists");
+                }
+
+                var location = _linkGenerator.GetPathByAction("Get", "Camps", new { moniker = model.Moniker });
+
+                if (string.IsNullOrWhiteSpace(location))
+                {
+                    return BadRequest("Could not use current moniker");
+                }
+
+                var camp = _mapper.Map<Camp>(model);
+
+                _repository.Add(camp);
+
+                if (await _repository.SaveChangesAsync())
+                {
+                    return Created(location, _mapper.Map<CampModel>(camp));
+                }
+
+            }
+            catch (Exception)
+            {
+                return this.StatusCode(500, "Database failure");
+            }
+
+            return BadRequest();
+        }
+
+        [HttpPut("{moniker}")]
+        public async Task<ActionResult<CampModel>> Put(string moniker, CampModel model)
+        {
+            try
+            {
+                var oldCamp = await _repository.GetCampAsync(model.Moniker);
+
+                if (oldCamp == null) return NotFound($"Could not find camp with moniker of {model.Moniker}");
+
+                _mapper.Map(model, oldCamp);
+
+                if (await _repository.SaveChangesAsync())
+                {
+                    return _mapper.Map<CampModel>(oldCamp);
+                }
+            }
+            catch (Exception)
+            {
+                return this.StatusCode(500, "Database failure");
+            }
+
+            return BadRequest();
+        }
+
+        [HttpDelete("{moniker}")]
+        public async Task<ActionResult<CampModel>> Put(string moniker)
+        {
+            try
+            {
+                var oldCamp = await _repository.GetCampAsync(moniker);
+
+                if (oldCamp == null) return NotFound($"Could not find camp with moniker of {moniker}");
+
+                _repository.Delete(oldCamp);
+
+                if (await _repository.SaveChangesAsync())
+                {
+                    return Ok();
+                }
+            }
+            catch (Exception)
+            {
+                return this.StatusCode(500, "Database failure");
+            }
+
+            return BadRequest();
         }
     }
 }
